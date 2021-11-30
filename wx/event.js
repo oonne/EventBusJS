@@ -54,9 +54,9 @@ export default {
    * 触发事件
    * @params {string} name 事件名
    * @params {string} page 当前页面
-   * @params {any} target 传参
+   * @params {any} ...args 传参
    */ 
-  emit: (name, page, target)=>{
+  emit: (name, page, ...args)=>{
     const listeners = (event[name] || []).filter((e) => e.page !== page);
 
     listeners.forEach( listener => {
@@ -67,7 +67,7 @@ export default {
     if (config.eventLog) {
       console.groupCollapsed(`%c  ${page} 触发事件 %c ${name}`, 'color:#e0c184; font-weight: bold', 'color:#f0a139; font-weight: bold');
       console.log(`%c 事件总线`, 'color:#ff65af; font-weight: bold', event);
-      console.log(`%c 传参`, 'color:#3d91cf; font-weight: bold', target);
+      console.log(`%c 传参`, 'color:#3d91cf; font-weight: bold', args);
       listeners.filter(e => e.page != page).map( listener => {
         console.log(`%c 执行`, 'color:#2c9f67; font-weight: bold', listener);
       });
