@@ -1,0 +1,31 @@
+{
+  "name": "eventbus-typescript",
+  "version": "1.0.0",
+  "description": "eventbus",
+  "type": "module",
+  "main": "event.ts",
+  "engines": {
+    "node": ">=16",
+    "npm": ">=7"
+  },
+  "scripts": {
+    "build": "tsc --build && tsc -d"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oonne/EventBusJS.git"
+  },
+  "keywords": [
+    "eventbus"
+  ],
+  "author": {
+    "name": "JAY",
+    "email": "JAY@oonne.com",
+    "url": "https://blog.oonne.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/oonne/EventBusJS/issues"
+  },
+  "homepage": "https://github.com/oonne/EventBusJS#readme"
+}

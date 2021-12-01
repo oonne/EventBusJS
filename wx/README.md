@@ -8,7 +8,7 @@
 - 在小程序Page()中，this.__route__ 可以指向当前页面的路由地址。
 
 ## 使用
-###引入
+### 引入
 每个要用到的页面都先引入：
 ``` javascript
 import event from './event'
