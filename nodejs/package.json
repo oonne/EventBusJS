@@ -1,8 +1,7 @@
 {
   "name": "eventbus-typescript",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "eventbus",
-  "type": "module",
   "main": "dist/event.js",
   "typings": "dist/event.d.ts",
   "engines": {
