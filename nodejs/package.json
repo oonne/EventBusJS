@@ -1,9 +1,10 @@
 {
   "name": "eventbus-typescript",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "eventbus",
   "type": "module",
-  "main": "event.ts",
+  "main": "dist/event.ts",
+  "typings": "dist/event.d.ts",
   "engines": {
     "node": ">=16",
     "npm": ">=7"
